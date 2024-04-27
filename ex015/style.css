@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+    background-color: chocolate;
+    font-weight: lighter;
+}
+
+h1 {
+    color: blue;
+    background-color: brown;
+}
+
+h2 {
+    color: darkgreen;
+} 
+
+p {
+    text-align: justify;
+}
