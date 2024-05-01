@@ -7,11 +7,6 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: url(bandeira-do-brasil.webp);
-            background-position: center center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: 100%;
         }
 
         .ab{
@@ -21,24 +16,43 @@
         }
 
         table{
-            width: 600px;
+            width: 500px;
+            height: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            background-color: white;
+            color: black;
+            padding: 10px;
+        }
+        
+        tbody > tr:nth-child(2n-1) {
+            background-color: black;
+        }
+
+        thead > tr > td{
+            position: sticky;
+            top: 0;
         }
 
         th{
-            color: white;
+            color: black;
             background-color: rgb(90, 90, 90);
             padding: 5px;
         }
 
         td, tr{
-            background-color: rgb(56, 56, 56);
-            color: white;
+            background-color: white;
+            color: black;
             border: 1px solid rgb(133, 132, 132);
             padding-top: 5px;
             padding-left: 20px;
         }
 
         a{
+            font-size: 1.5em;
             text-decoration: none;
             color: #3166D0;
         }
@@ -51,6 +65,8 @@
 <body>
     <h1>Uso de tabelas Grandes</h1>
     <!--Anotomia de Tabelas Grande
+    TABLE
+        CAPTION
     THEAD
         tr, td, th
     TBODY
@@ -60,6 +76,7 @@
     -->
 
     <table>
+        <CAPtion>População de Cada Estado Brasileiro</CAPtion>
         <thead>
             <tr>
                 <th>Estado</th>
